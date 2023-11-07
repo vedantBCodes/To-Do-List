@@ -1,0 +1,38 @@
+#add{
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 250px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+#btn{
+    width: 100px;
+    height: 55px;
+    border: none;
+    outline: none;
+    background: #ff5945;
+    color:#fff;
+    border-radius: 20px;
+    font-size: 20px;
+}
+#inp{
+    width: 360px;
+    padding: 0;
+    border-radius: 20px;
+    background-color: rgb(249, 248, 247);
+}
+body{
+    background-color:antiquewhite;
+}
+#container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:400px;
+    border-radius: 10px;
+    padding:10px 10px 100px 10px;
+    background-color: white;
+}
