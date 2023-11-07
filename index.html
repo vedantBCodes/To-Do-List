@@ -11,13 +11,18 @@
         <div>
             <h1>To-Do List <img src="NoteBook-logo.webp" alt="" width="30px"></h1>
         </div>
-        <div id="inp">
-            <input type="text" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add your Task" id="add">
-            <input type="button" value="Add" id="btn">
+        <div id="input-box">
+            <input type="text" placeholder="Add your Task" id="add">
+            <input type="button" value="Add" id="btn" onclick="display()">
         </div>
         <div id="tasks">
-
+            <ul id="lists-container" type="none">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
