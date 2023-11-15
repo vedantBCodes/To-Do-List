@@ -34,10 +34,34 @@
     background-color: antiquewhite;
 }
 #container2{
-    padding:10px 10px 100px 10px;
+    padding:10px 10px 60px 20px;
     border-radius: 10px;
     background-color:white; ;
 }
 #ft{
     font-size: 30px;
+}
+
+.taskStyle{
+    width: 280px;
+    display: inline-block;
+    background-color:rgb(231, 222, 222);
+    border-radius:10px;
+    padding:10px;
+    margin-top:10px;
+   
+}
+    /* content:url("radioChecked.png"); */
+    /* background: url(radioChecked.png); */
+.flipImage{
+    background-color:rgb(198, 192, 192);
+    text-decoration: line-through;
+  }
+.crossLogo{
+    width: 45px;
+    position: relative;
+    /* right:20px; */
+    top:12px;
+    right: 0px;
+
 }
