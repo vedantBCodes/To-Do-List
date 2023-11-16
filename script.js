@@ -12,22 +12,37 @@ function display() {
     li.innerHTML = inputTask.value;
     addTask.appendChild(li);
     let span1=document.createElement("span");
-    span1.innerHTML="\u00d7";
+    span1.innerHTML=`<img src="cutLogo.png" alt="">`;
     li.appendChild(span1);
     
   }
   inputTask.value = "";
+  savedata();
 }
 
 addTask.addEventListener("click",function(e){
   if(e.target.tagName==="LI")
   {
     e.target.classList.toggle("checked");
+    savedata();
 
   }
-  else if(e.target.tagName==="SPAN")
+  else if(e.target.tagName==="IMG")
   {
-    e.target.parentElement.remove();
+   let x= e.target.parentElement;
+   x.parentElement.remove();
+   savedata();
   }
-},false);
+});
+
+// Saving the data in the local storage  (very important)
+
+function savedata(){
+  localStorage.setItem("data",addTask.innerHTML);
+}
+
+function showTask(){
+  addTask.innerHTML=localStorage.getItem("data");
+}
+showTask();
 

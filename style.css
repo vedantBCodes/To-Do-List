@@ -43,7 +43,7 @@
 }
 ul li{
     font-size: 20px;
-    padding: 10px 0px;
+    padding: 10px;
     list-style: none;
     background-color: rgb(240, 244, 244);
     margin:5px;
@@ -63,17 +63,15 @@ ul li::before{
     background-size: cover;
     background-position: center;
 }
-ul li span{
+ul li span img{
     width:40px;
     position: absolute;
-    right: 5px;
+    right: -5px;
+    bottom: -14px;
     text-align: center;
     padding: 5px;
     border-radius: 10px;
     margin-bottom: 10px;
-}
-ul li span:hover{
-    background-color: rgb(250, 250, 241);
 }
 #check{
     display: inline-block;
@@ -89,5 +87,4 @@ ul li.checked{
 
 ul li.checked::before{
     background-image: url(radioChecked.png);
-
 }
