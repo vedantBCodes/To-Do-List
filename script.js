@@ -8,21 +8,26 @@ function display() {
   } 
   else 
   {
-    const task = document.createElement("div");
-    const text=`<div class="taskStyle" onclick="flip();">
-    ${inputTask.value}
-     </div>
-     <img src="cutLogo.png" alt=""class="crossLogo"  >`;
-    task.innerHTML = text;
-    task.style.fontSize="25px";
-    task.firstElementChild.id="cont";
-    addTask.appendChild(task);
-    inputTask.value = "";
+    const li = document.createElement("li");
+    li.innerHTML = inputTask.value;
+    addTask.appendChild(li);
+    let span1=document.createElement("span");
+    span1.innerHTML="\u00d7";
+    li.appendChild(span1);
+    
   }
+  inputTask.value = "";
 }
 
-function flip()
-{
-  let div2=document.querySelector("#cont");
-  div2.classList.toggle("flipImage");
-}
+addTask.addEventListener("click",function(e){
+  if(e.target.tagName==="LI")
+  {
+    e.target.classList.toggle("checked");
+
+  }
+  else if(e.target.tagName==="SPAN")
+  {
+    e.target.parentElement.remove();
+  }
+},false);
+
