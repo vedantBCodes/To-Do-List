@@ -1,107 +1,139 @@
-#add{
-    border: none;
-    outline: none;
-    background: transparent;
-    width: 250px;
-    height: 50px;
-    border-radius: 20px;
-    font-size: 20px;
+#add {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 250px;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 20px;
 }
-#btn{
-    width: 100px;
-    height: 55px;
+#btn {
+  width: 100px;
+  height: 55px;
+  border: none;
+  outline: none;
+  background: #ff5945;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 20px;
+}
+#input-box {
+  width: 360px;
+  padding: 0;
+  border-radius: 20px;
+  background-color: rgb(249, 248, 247);
+}
+#container {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: antiquewhite;
+}
+#container2 {
+  padding: 10px 10px 60px 20px;
+  border-radius: 10px;
+  background-color: white;
+}
+#ft {
+  font-size: 30px;
+}
+ul li {
+  font-size: 20px;
+  padding: 10px;
+  list-style: none;
+  background-color: rgb(240, 244, 244);
+  margin: 5px;
+  border-radius: 10px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+ul li::before {
+  content: " ";
+  position: absolute;
+  top: 5px;
+  left: -40px;
+  height: 30px;
+  width: 30px;
+  background-image: url(radioUnchecked.png);
+  background-size: cover;
+  background-position: center;
+}
+ul li span img {
+  width: 43px;
+  position: absolute;
+  right: -5px;
+  bottom: -15px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+ul li span img:hover {
+  width: 46px;
+  transition: 1s;
+}
+#check {
+  display: inline-block;
+  position: relative;
+  right: 30px;
+  top: 2px;
+  font-size: 20px;
+}
+ul li.checked {
+  background-color: rgb(221, 225, 225);
+}
+ul li.checked::before {
+  background-image: url(radioChecked.png);
+}
+
+@media (max-width: 450px) {
+  #container {
+    width: 327px;
+  }
+  #input-box {
+    width: 300px;
+    height: 50px;
+  }
+  #add {
+    width: 210px;
+  }
+  #btn {
+    width: 80px;
+    height: 48px;
     border: none;
     outline: none;
     background: #ff5945;
-    color:#fff;
+    color: #fff;
     border-radius: 20px;
-    font-size: 20px;
+    font-size: 15px;
+    position: relative;
+    bottom: 2px;
+  }
 }
-#input-box{
-    width: 360px;
-    padding: 0;
+@media (max-width: 350px) {
+  #container {
+    width: 290px;
+  }
+  #input-box {
+    width: 270px;
+    height: 50px;
+  }
+  #add {
+    width: 180px;
+  }
+  #btn {
+    width: 80px;
+    height: 48px;
+    border: none;
+    outline: none;
+    background: #ff5945;
+    color: #fff;
     border-radius: 20px;
-    background-color: rgb(249, 248, 247);
-}
-#container{
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width:400px;
-    background-color: antiquewhite;
-}
-#container2{
-    padding:10px 10px 60px 20px;
-    border-radius: 10px;
-    background-color:white; ;
-}
-#ft{
-    font-size: 30px;
-}
-ul li{
-    font-size: 20px;
-    padding: 10px;
-    list-style: none;
-    background-color: rgb(240, 244, 244);
-    margin:5px;
-    border-radius: 10px;
-    user-select: none;
-    cursor: pointer;
+    font-size: 15px;
     position: relative;
-}
-ul li::before{
-    content: " ";
-    position: absolute;
-    top:5px;
-    left:-40px;
-    height: 30px;
-    width: 30px;
-    background-image: url(radioUnchecked.png);
-    background-size: cover;
-    background-position: center;
-}
-ul li span img{
-    width:43px;
-    position: absolute;
-    right: -5px;
-    bottom: -15px;
-    text-align: center;
-    padding: 5px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-ul li span img:hover{
-    width: 46px;
-    transition: 1s;
-}
-#check{
-    display: inline-block;
-    position: relative;
-    right:30px;
-    top:2px;
-    font-size: 20px;
-}
-ul li.checked{
-    background-color: rgb(221, 225, 225);
-
-}
-ul li.checked::before{
-    background-image: url(radioChecked.png);
-}
-
-@media (max-width:450px)
-{
-    #container{
-        width: 300px;
-    }
-    #input-box{
-        width: 280px;
-    }
-    #add{
-        width: 190px;
-    }
-    #btn{
-        width: 80px;
-    }
+    bottom: 2px;
+  }
 }
