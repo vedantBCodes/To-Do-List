@@ -38,11 +38,11 @@ addTask.addEventListener("click",function(e){
 // Saving the data in the local storage  (very important)
 
 function savedata(){
-  localStorage.setItem("data",addTask.innerHTML);
+  localStorage.setItem("data1",addTask.innerHTML);
 }
 
 function showTask(){
-  addTask.innerHTML=localStorage.getItem("data");
+  addTask.innerHTML=localStorage.getItem("data1");
 }
 showTask();
 
