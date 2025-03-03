@@ -45,4 +45,3 @@ function showTask(){
   addTask.innerHTML=localStorage.getItem("data1");
 }
 showTask();
-
